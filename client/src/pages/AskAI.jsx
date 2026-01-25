@@ -20,7 +20,7 @@ const AskAI = () => {
 
     try {
       // 1️⃣ Call AI backend
-      const res = await fetch("https://legalease-x5a6.onrender.com/ask", {
+      const res = await fetch("https://legalease-x5a6.onrender.com/api/ai/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userQuestion }),
