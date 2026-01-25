@@ -98,19 +98,22 @@ const Suggestions = () => {
 
     try {
       // SAVE SUGGESTION TO MONGODB
-      const response = await fetch("https://legalease-x5a6.onrender.com/api/feedback/add", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message: suggestion,
-        }),
-      });
+      const response = await fetch(
+        "https://legalease-x5a6.onrender.com/api/feedback/add",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message: suggestion,
+          }),
+        }
+      );
 
-      const data = await response.json();
+      await response.json(); 
 
       if (response.ok) {
         setSubmitted(true);
