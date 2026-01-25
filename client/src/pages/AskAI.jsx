@@ -20,7 +20,7 @@ const AskAI = () => {
 
     try {
       // 1️⃣ Call AI backend
-      const res = await fetch("http://localhost:5000/api/ai/ask", {
+      const res = await fetch("https://legalease-x5a6.onrender.com/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userQuestion }),
@@ -37,7 +37,7 @@ const AskAI = () => {
       setMessages((prev) => [...prev, aiMessage]);
 
       // 3️⃣ SAVE TO MONGODB
-      await fetch("http://localhost:5000/api/ai-query/save", {
+      await fetch("https://legalease-x5a6.onrender.com/api/ai-query/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
