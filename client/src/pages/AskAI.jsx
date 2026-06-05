@@ -92,7 +92,7 @@ const AskAI = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="flex gap-2 p-4 border-t">
-            <input
+            <input  
               type="text"
               className="flex-1 border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Ask your legal question..."

@@ -52,14 +52,7 @@ const About = () => {
                   className="text-blue-600 font-medium underline"
                 >
                   Suggestions page
-                </Link>{" "}
-                or contact us at{" "}
-                <a
-                  href="mailto:contact@legalease.com"
-                  className="text-blue-600 underline"
-                >
-                  contact@legalease.com
-                </a>
+                </Link>
                 .
               </p>
             </section>

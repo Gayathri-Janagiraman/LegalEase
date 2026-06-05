@@ -11,9 +11,11 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
             Empowering You with Legal Knowledge
           </h1>
+          
           <p className="text-gray-700 text-lg mb-6">
             LegalEase is your digital helpdesk for understanding your legal rights, asking questions anonymously, and accessing free legal document templates.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/laws" className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
               Browse Legal Info
